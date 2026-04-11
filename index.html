@@ -3,61 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intent-Based Finance | Institutional Domain Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Intent Protocol Suite | Intent-Centric Blockchain Infrastructure</title>
+    <meta name="description" content="Official home of the Intent Protocol Suite. Featuring IntentValidation.com, IntentPayments.com, and IntentCheckout.com. Leading the shift toward declarative Web3 execution.">
+    
+    <meta name="keywords" content="IntentValidation, Intent Protocol Suite, blockchain validation, intent-centric architecture, web3 solvers, transaction verification, decentralized finance compliance, intent-based settlement, cross-chain validation">
+    
+    <meta name="author" content="forkspree">
+    <link rel="canonical" href="https://forkspree.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forkspree.github.io/">
+    <meta property="og:title" content="Intent Protocol Suite | Validation & Settlement">
+    <meta property="og:description" content="Decentralized infrastructure bridging user intent and blockchain execution via IntentValidation.com and more.">
+    <meta property="og:site_name" content="Intent Protocol Suite">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Intent Protocol Suite",
+      "url": "https://forkspree.github.io",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "ceall06@proton.me",
+        "contactType": "technical support"
+      },
+      "description": "A comprehensive suite for intent-based blockchain transactions, specializing in intent validation and decentralized settlement."
+    }
+    </script>
+
     <style>
-        :root { --accent: #ffffff; --bg: #000000; --card: #0d0d0d; --text-main: #ffffff; --text-muted: #888888; --border: #1a1a1a; }
-        body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text-main); margin: 0; padding: 40px 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
-        .container { max-width: 1100px; margin: 0 auto; }
+        :root {
+            --primary: #0f172a;
+            --secondary: #1e293b;
+            --accent: #3b82f6;
+            --text-main: #334155;
+            --bg-body: #f8fafc;
+        }
+
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--bg-body); margin: 0; padding: 0; }
+        
+        .wrapper { max-width: 960px; margin: 40px auto; padding: 20px; }
+        
+        /* Main Prospectus Card */
+        .prospectus-container { background: #ffffff; padding: 60px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 8px solid var(--accent); }
+        
         header { text-align: center; margin-bottom: 60px; }
-        h1 { font-size: clamp(1.8rem, 6vw, 2.8rem); letter-spacing: -0.05em; margin: 0; font-weight: 900; text-transform: uppercase; }
-        .tagline { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.4em; margin-top: 15px; font-weight: 300; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 50px; }
-        .asset { background: var(--card); border: 1px solid var(--border); padding: 40px 20px; border-radius: 4px; text-align: center; transition: all 0.4s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 160px; box-sizing: border-box; overflow: hidden; }
-        .asset:hover { border-color: #333; background: #111; }
-        .asset.featured { border: 1px solid #222; background: linear-gradient(180deg, #0d0d0d 0%, #000 100%); grid-column: 1 / -1; }
-        /* Word-break and Clamp ensure the long text stays inside the box */
-        .domain { font-weight: 700; font-size: clamp(0.95rem, 3.2vw, 1.4rem); color: var(--accent); display: block; text-transform: lowercase; word-break: break-all; width: 100%; margin-bottom: 8px; letter-spacing: -0.01em; }
-        .valuation { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
-        .prospectus { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 50px 20px; text-align: center; margin-bottom: 50px; }
-        .btn { display: inline-block; background: var(--accent); color: #000; padding: 16px 35px; border-radius: 2px; text-decoration: none; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; transition: 0.3s; font-size: 0.75rem; }
-        .btn:hover { opacity: 0.9; transform: scale(1.02); }
-        .inquiry-box { background: var(--card); border: 1px solid var(--border); padding: 50px 25px; border-radius: 4px; }
-        .inquiry-box h3 { margin-top: 0; text-transform: uppercase; letter-spacing: 0.2em; font-size: 1rem; margin-bottom: 25px; text-align: center; }
-        input, textarea { width: 100%; padding: 15px; margin-top: 12px; background: #000; border: 1px solid #1a1a1a; color: #fff; box-sizing: border-box; font-family: inherit; border-radius: 2px; font-size: 0.9rem; }
-        input:focus, textarea:focus { border-color: #444; outline: none; }
-        .submit-btn { width: 100%; background: none; border: 1px solid #333; color: #fff; padding: 18px; margin-top: 25px; font-weight: 700; cursor: pointer; text-transform: uppercase; border-radius: 2px; transition: all 0.3s; font-size: 0.8rem; letter-spacing: 0.3em; }
-        .submit-btn:hover { background: #fff; color: #000; border-color: #fff; }
-        footer { text-align: center; margin-top: 60px; color: #333; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; }
+        h1 { font-size: 3rem; color: var(--primary); margin: 0; letter-spacing: -1.5px; }
+        .tagline { font-size: 1.2rem; color: #64748b; margin-top: 10px; }
+
+        section { margin-bottom: 50px; }
+        h2 { font-size: 1.8rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; color: var(--primary); }
+
+        /* Infrastructure Grid */
+        .domain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; list-style: none; padding: 0; }
+        .domain-grid li { background: #f1f5f9; padding: 20px; border-radius: 10px; font-weight: 700; color: var(--accent); text-align: center; border: 1px solid transparent; transition: 0.3s ease; }
+        .domain-grid li:hover { background: #fff; border-color: var(--accent); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15); transform: scale(1.02); }
+
+        /* Content Blocks */
+        .focus-box { background: #eff6ff; border-left: 4px solid var(--accent); padding: 20px; border-radius: 4px; margin: 20px 0; }
+        
+        /* Form Styling */
+        form { background: #fdfdfd; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; }
+        .field { margin-bottom: 25px; }
+        label { display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem; }
+        input[type="email"], textarea { width: 100%; padding: 14px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        
+        button { background: var(--primary); color: white; padding: 16px 32px; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: 0.2s; width: 100%; }
+        button:hover { background: var(--accent); }
+
+        footer { text-align: center; padding: 50px 0; color: #94a3b8; font-size: 0.85rem; }
+        
+        @media (max-width: 768px) {
+            .prospectus-container { padding: 30px; }
+            h1 { font-size: 2.2rem; }
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>INTENT-BASED FINANCE</h1>
-        <div class="tagline">The Agentic AI Settlement Layer</div>
-    </header>
-    <div class="grid">
-        <div class="asset featured"><span class="domain">IntentPayments.com</span><span class="valuation">Institutional Valuation: $195,000.00</span></div>
-        <div class="asset"><span class="domain">IntentAuthorization.com</span><span class="valuation">$125,000.00</span></div>
-        <div class="asset"><span class="domain">IntentValidation.com</span><span class="valuation">$115,000.00</span></div>
-        <div class="asset"><span class="domain">IntentCheckout.com</span><span class="valuation">$95,000.00</span></div>
-        <div class="asset"><span class="domain">IntentTransfer.com</span><span class="valuation">$95,000.00</span></div>
+
+    <div class="wrapper">
+        <main class="prospectus-container">
+            <header>
+                <h1>Intent Protocol Suite</h1>
+                <p class="tagline">Pioneering Declarative Financial Settlement Layers</p>
+                <p>Architect: <strong>forkspree</strong> | <strong>ceall06@proton.me</strong></p>
+            </header>
+
+            <section id="vision">
+                <h2>Vision Statement</h2>
+                <p>Modern blockchain interactions are limited by "how-to" complexity. The <strong>Intent Protocol Suite</strong> introduces a declarative model, allowing users to define specific outcomes. Our architecture validates, routes, and settles these intents across decentralized networks with zero-knowledge precision.</p>
+            </section>
+
+            <section id="validation-focus">
+                <h2>Specialized Pillar: IntentValidation.com</h2>
+                <div class="focus-box">
+                    <p><strong>Intent Validation</strong> is the critical bridge between user desire and chain settlement. It ensures that solver actions match user-defined constraints. This domain serves as the primary verification oracle for the entire ecosystem, ensuring compliance and transaction integrity in real-time.</p>
+                </div>
+            </section>
+
+            <section id="infrastructure">
+                <h2>Ecosystem Core Domains</h2>
+                <ul class="domain-grid">
+                    <li>IntentValidation.com</li>
+                    <li>IntentPayments.com</li>
+                    <li>IntentCheckout.com</li>
+                    <li>IntentAuthorization.com</li>
+                    <li>IntentTransfer.com</li>
+                </ul>
+            </section>
+
+            <section id="inquiry">
+                <h2>Strategic Collaboration</h2>
+                <p>Currently accepting pre-seed inquiries and technical partnership proposals. For details on the roadmap or specific domain infrastructure, use the portal below.</p>
+                
+                <form action="https://formspree.io/f/mkoplnbw" method="POST">
+                    <div class="field">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="name@protocol.org">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="message">Detailed Inquiry</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Project overview or interest details..."></textarea>
+                    </div>
+
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit">Initialize Protocol Contact</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 Intent Protocol Group | Infrastructure by forkspree
+        </footer>
     </div>
-    <div class="prospectus">
-        <h3 style="margin-bottom: 10px; font-size: 1rem; letter-spacing: 0.2em;">PORTFOLIO PROSPECTUS</h3>
-        <p style="color: var(--text-muted); margin-bottom: 30px; font-weight: 300; font-size: 0.85rem;">Strategic thesis regarding the x402 protocol and autonomous agent commerce.</p>
-        <a href="intent-finance-prospectus.pdf" download class="btn">Download Prospectus</a>
-    </div>
-    <div class="inquiry-box">
-        <h3>Secure Acquisition Portal</h3>
-        <form action="https://formspree.io/f/mkoplnbw" method="POST">
-            <input type="email" name="email" placeholder="Professional Email" required>
-            <textarea name="message" rows="5" placeholder="Provide acquisition proposal or asset inquiry." required></textarea>
-            <input type="text" name="_gotcha" style="display:none">
-            <button type="submit" class="submit-btn">Initiate Negotiation</button>
-        </form>
-    </div>
-    <footer>Settlement via Escrow.com | Institutional Portfolio Management 2026</footer>
-</div>
+
 </body>
 </html>
