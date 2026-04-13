@@ -1,124 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YOUR_GA_ID');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Intent Protocol Suite | Dark-Pool Financial Infrastructure</title>
-    <meta name="description" content="Official home of the Intent Protocol Suite. Featuring IntentValidation.com, IntentPayments.com, and IntentCheckout.com. Leading the shift toward declarative Web3 execution.">
-    
-    <meta name="keywords" content="IntentValidation, Intent Protocol Suite, blockchain validation, intent-centric architecture, web3 solvers, transaction verification, decentralized finance compliance, intent-based settlement, cross-chain validation">
-    
+    <title>IntentPayments.com | Intent Protocol Suite & Web3 Settlement</title>
+    <meta name="description" content="IntentPayments.com is the flagship hub for the Intent Protocol Suite. We provide intent-centric blockchain validation, web3 solvers, and decentralized finance compliance for cross-chain settlement.">
+    <meta name="keywords" content="IntentPayments, IntentValidation, Intent Protocol Suite, blockchain validation, intent-centric architecture, web3 solvers, transaction verification, decentralized finance compliance, intent-based settlement, cross-chain validation, declarative transactions, IntentTransfer, IntentCheckout">
     <meta name="author" content="Intent Protocol Group">
-    <link rel="canonical" href="https://ceall06.github.io/">
-
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Intent Protocol Suite | Declarative Settlement Layers">
+    <meta property="og:description" content="Bridging user intent and blockchain execution via IntentPayments.com. The infrastructure for intent-centric Web3.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ceall06.github.io/">
-    <meta property="og:title" content="Intent Protocol Suite | Validation & Settlement">
-    <meta property="og:description" content="Decentralized infrastructure bridging user intent and blockchain execution via IntentValidation.com.">
+    <meta property="og:url" content="https://intentpayments.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Intent Protocol Suite",
+      "alternateName": "IntentPayments",
+      "url": "https://intentpayments.com",
+      "description": "A decentralized financial infrastructure suite for intent-based transactions and blockchain validation.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "ceall06@proton.me",
+        "contactType": "investor relations"
+      }
+    }
+    </script>
 
     <style>
         :root {
-            --bg-deep: #0f172a;      /* Dark Slate Blue/Black */
-            --bg-card: #1e293b;      /* Slightly lighter slate */
-            --accent: #3b82f6;       /* Electric Blue */
-            --text-primary: #f8fafc; /* Near White */
-            --text-secondary: #94a3b8; /* Muted Grey */
-            --border: #334155;
+            --bg-deep: #0a0f1d;
+            --bg-card: #161e2d;      
+            --accent: #3b82f6;
+            --text-primary: #ffffff; 
+            --text-secondary: #94a3b8; 
+            --border: #1e293b;
         }
 
         * { box-sizing: border-box; }
-        body { 
-            font-family: 'Inter', -apple-system, sans-serif; 
-            line-height: 1.6; 
-            color: var(--text-primary); 
-            background-color: var(--bg-deep); 
-            margin: 0; 
-            padding: 0; 
-        }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text-primary); background-color: var(--bg-deep); margin: 0; padding: 0; }
         
-        .wrapper { max-width: 960px; margin: 40px auto; padding: 20px; }
+        .wrapper { max-width: 900px; margin: 40px auto; padding: 20px; }
         
-        /* Main Prospectus Card */
         .prospectus-container { 
             background: var(--bg-card); 
             padding: 60px; 
-            border-radius: 16px; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5); 
+            border-radius: 20px; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6); 
             border: 1px solid var(--border);
         }
         
-        header { text-align: center; margin-bottom: 60px; }
-        h1 { font-size: 3rem; color: var(--text-primary); margin: 0; letter-spacing: -1.5px; }
-        .tagline { font-size: 1.2rem; color: var(--accent); margin-top: 10px; text-transform: uppercase; font-weight: 600; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 3.5rem; margin: 0; letter-spacing: -2px; }
+        .main-domain { color: var(--accent); font-weight: 800; }
+        .tagline { font-size: 1.1rem; color: var(--text-secondary); margin-top: 15px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
 
-        section { margin-bottom: 50px; }
-        h2 { font-size: 1.8rem; border-bottom: 1px solid var(--border); padding-bottom: 12px; color: var(--text-primary); }
+        section { margin-bottom: 45px; }
+        h2 { font-size: 1.8rem; border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 20px; color: var(--text-primary); }
 
-        /* Infrastructure Grid */
-        .domain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; list-style: none; padding: 0; }
+        .domain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; list-style: none; padding: 0; }
         .domain-grid li { 
-            background: rgba(15, 23, 42, 0.5); 
+            background: #0f172a; 
             padding: 20px; 
-            border-radius: 10px; 
+            border-radius: 12px; 
             font-weight: 700; 
-            color: var(--accent); 
+            color: var(--text-secondary); 
             text-align: center; 
             border: 1px solid var(--border); 
-            transition: 0.3s ease; 
+            transition: all 0.3s ease; 
         }
-        .domain-grid li:hover { 
-            background: var(--accent); 
-            color: #fff; 
-            border-color: #fff; 
-            transform: translateY(-3px); 
-        }
+        .domain-grid li.active { color: var(--accent); border-color: var(--accent); background: rgba(59, 130, 246, 0.08); }
+        .domain-grid li:hover { border-color: var(--text-primary); color: var(--text-primary); transform: translateY(-3px); }
 
-        /* Focus Box */
-        .focus-box { 
-            background: rgba(59, 130, 246, 0.1); 
-            border-left: 4px solid var(--accent); 
-            padding: 20px; 
-            border-radius: 4px; 
-            margin: 20px 0; 
-        }
+        .seo-content { color: var(--text-secondary); font-size: 1.05rem; }
+        strong { color: var(--text-primary); }
         
-        /* Form Styling */
-        form { 
-            background: rgba(15, 23, 42, 0.3); 
-            padding: 30px; 
-            border-radius: 12px; 
-            border: 1px solid var(--border); 
-        }
-        .field { margin-bottom: 25px; }
-        label { display: block; margin-bottom: 10px; font-weight: 600; font-size: 0.9rem; color: var(--text-secondary); }
+        form { background: rgba(10, 15, 29, 0.5); padding: 40px; border-radius: 15px; border: 1px solid var(--border); }
+        .field { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem; color: var(--text-secondary); }
         input[type="email"], textarea { 
             width: 100%; 
-            padding: 14px; 
-            background: var(--bg-deep);
+            padding: 15px; 
+            background: #0a0f1d;
             border: 1px solid var(--border); 
-            border-radius: 6px; 
+            border-radius: 8px; 
             font-size: 1rem; 
             color: #fff;
         }
-        input:focus, textarea:focus { outline: 1px solid var(--accent); }
         
         button { 
             background: var(--accent); 
             color: white; 
-            padding: 16px 32px; 
+            padding: 18px; 
             border: none; 
-            border-radius: 6px; 
+            border-radius: 8px; 
             font-size: 1.1rem; 
-            font-weight: bold; 
+            font-weight: 800; 
             cursor: pointer; 
-            transition: 0.2s; 
             width: 100%; 
         }
-        button:hover { filter: brightness(1.2); }
 
-        footer { text-align: center; padding: 50px 0; color: var(--text-secondary); font-size: 0.85rem; }
+        footer { text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.9rem; }
         
         @media (max-width: 768px) {
             .prospectus-container { padding: 30px; }
@@ -131,63 +126,59 @@
     <div class="wrapper">
         <main class="prospectus-container">
             <header>
-                <h1>Intent Protocol Suite</h1>
-                <p class="tagline">Next-Gen Declarative Settlement Layers</p>
-                <p style="color: var(--text-secondary);">Architect: <strong>ceall06@proton.me</strong></p>
+                <p class="tagline">Official Digital Prospectus</p>
+                <h1><span class="main-domain">IntentPayments</span>.com</h1>
+                <p class="seo-content">
+                    Institutional Point of Contact: <strong>ceall06@proton.me</strong>
+                </p>
             </header>
 
-            <section id="vision">
-                <h2>Vision Statement</h2>
-                <p>Traditional blockchain interactions are bogged down by imperative execution. The <strong>Intent Protocol Suite</strong> introduces a declarative model where users define desired outcomes. Our architecture validates and settles these intents across decentralized networks with high-fidelity precision.</p>
-            </section>
-
-            <section id="validation-focus">
-                <h2>The Validation Engine: IntentValidation.com</h2>
-                <div class="focus-box">
-                    <p><strong>Intent Validation</strong> is the security gateway for the suite. It verifies that solver actions precisely match user constraints before finality is reached on-chain. This serves as the primary verification oracle for all peer-to-peer and merchant intents.</p>
+            <section id="intent-validation-infrastructure">
+                <h2>I. Decentralized Intent Validation</h2>
+                <div class="seo-content">
+                    <p>The <strong>Intent Protocol Suite</strong> is engineered to solve the fragmented liquidity and execution challenges of the modern space economy. Utilizing <strong>IntentValidation.com</strong> as a core verification oracle, we ensure that every declarative transaction meets user-defined constraints before on-chain settlement.</p>
                 </div>
             </section>
 
-            <section id="infrastructure">
-                <h2>Core Infrastructure Domains</h2>
+            <section id="payment-settlement-ecosystem">
+                <h2>II. Strategic Asset Portfolio</h2>
+                <p class="seo-content">Our ecosystem provides a unified stack for <strong>intent-centric architecture</strong> and <strong>transaction verification</strong>:</p>
                 <ul class="domain-grid">
+                    <li class="active">IntentPayments.com</li>
                     <li>IntentValidation.com</li>
-                    <li>IntentPayments.com</li>
                     <li>IntentCheckout.com</li>
                     <li>IntentAuthorization.com</li>
                     <li>IntentTransfer.com</li>
                 </ul>
             </section>
 
-            <section id="inquiry">
-                <h2>Secure Inquiry Portal</h2>
-                <p style="color: var(--text-secondary);">Contact the architect for documentation access or acquisition inquiries.</p>
+            <section id="inquiry-portal">
+                <h2>III. Secure Inquiry & Partnerships</h2>
+                <p class="seo-content">Interested in <strong>Web3 solvers</strong>, <strong>cross-chain validation</strong>, or <strong>DeFi compliance</strong>? Submit your inquiry through our encrypted portal.</p>
                 
                 <form action="https://formspree.io/f/mkoplnbw" method="POST">
                     <div class="field">
-                        <label for="email">Work Email</label>
-                        <input type="email" id="email" name="_replyto" required placeholder="name@protocol.io">
+                        <label for="email">Corporate Email Address</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="name@organization.com">
                     </div>
                     
                     <div class="field">
-                        <label for="message">Detailed Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="How can we collaborate?"></textarea>
+                        <label for="message">Detailed Inquiry</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Outline the scope of your interest..."></textarea>
                     </div>
 
                     <input type="text" name="_gotcha" style="display:none">
-
-                    <button type="submit">Submit Inquiry</button>
+                    <button type="submit">Initialize Institutional Contact</button>
                 </form>
             </section>
         </main>
 
         <footer>
-            &copy; 2026 Intent Protocol Group | Digital Infrastructure
+            <p>&copy; 2026 Intent Protocol Group | <strong>Intent-Centric Financial Architecture</strong></p>
         </footer>
     </div>
 
 </body>
 </html>
-           
         
           
